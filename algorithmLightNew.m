@@ -12,6 +12,7 @@ end
 
 addpath([pwd '/automaticStep/']);
 addpath([pwd '/toolsFunctions/']);
+addpath([pwd '/helperFunctions/']);
 
 colors = [
     0.00  0.00  1.00
