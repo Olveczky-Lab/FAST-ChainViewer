@@ -77,6 +77,8 @@ function pushbutton25_Callback(hObject, eventdata, handles)
 % Plotting of a selected cluster in the cluster listbox.
 addpath([pwd '/plotFunctions/']);
 addpath([pwd '/toolsFunctions/']);
+addpath([pwd '/helperFunctions/']);
+
 % Loading the data.
 value_selected = get(handles.listbox1, 'Value');
 clusterVecAll = handles.clusterVecAll;
