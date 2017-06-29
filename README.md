@@ -1,2 +1,12 @@
 # FAST-ChainViewer
-Matlab code for manual inspection of FAST spike-sorting results
+
+Manual inspection and correction of FAST spike-sorting results Edit
+
+## Installation
+
+## Data preparation
+
+## Automatic Step
+
+## GUI
+
