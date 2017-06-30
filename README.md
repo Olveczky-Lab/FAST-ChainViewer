@@ -1,6 +1,6 @@
 # FAST-ChainViewer
 
-Use this graphical utility to visualize the unsupervised output of our Fast Automated Spike Tracker [FAST](https://github.com/Olveczky-Lab/FAST) spike-sorting algorithm. 
+Use this graphical utility to visualize the unsupervised output of our Fast Automated Spike Tracker ([FAST](https://github.com/Olveczky-Lab/FAST)) spike-sorting algorithm. 
 
 Using a combination of automatic and manual procedures, you can interactively *merge* spike 'chains' or clusters that should belong to the same single unit, and *split* chains that are incorrect mergers of two or more single units.
 
