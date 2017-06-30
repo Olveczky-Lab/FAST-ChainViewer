@@ -1,8 +1,12 @@
-function algorithmLightNew(pathwaySave, ChGroupList, pathwayData)
-% Main function of the program. This function allows to load the data and
-% to identify the partners for each chains.
+function processAllChains(pathwaySave, ChGroupList, pathwayData)
+% This function loads data and identifies possible partners for each chain.
 % Two outputs are saved in hard drive : the matrix of links and properties, and a vector with all
 % of the L2 chains. 
+% INPUTS: 
+% pathwaySave - location where you want to save the processed data. e.g. 'C:\Data\Rat1'
+% ChGroupList - vector of ChGroups you want to process. e.g. 0:15
+% pathwayData - directory where FAST processed data is stored. e.g. 'D:\Data\Rat1'
+% Alternatively you could omit this input and specify data locations in getDataPath.m
 
 if nargin < 3
     pathwayData = getDataPath(pathwaySave);

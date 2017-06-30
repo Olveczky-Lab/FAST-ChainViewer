@@ -1,4 +1,6 @@
 function saveMergedChainsWV(fpath)
+% Use this function to generate spike waveform files for each merged chain.
+% Inputs: fpath - path to dataset folder. e.g. 'D:\Data\Rat1\'.
 
 samp = 64;
 chunk = 10e6; % 1 GB memory ~ 2e6 spikes for 4 Ch
