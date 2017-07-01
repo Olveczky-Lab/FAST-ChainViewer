@@ -4,11 +4,6 @@ Use this graphical utility to visualize the unsupervised output of our [Fast Aut
 
 Using a combination of automatic and manual procedures, you can interactively *merge* spike 'chains' or clusters that belong to the same single unit, and *split* chains that are incorrect mergers of two or more single units.
 
-## Limitations
-
-- At present, the GUI is designed to work with 4-channel tetrode data. ChGroups with fewer channels can also be sorted but their waveforms will be padded with zeros up to 4 channels. In the future we will add support for channel groups with > 4 channels.
-
-- This program also assumes that the individual recording files of your dataset are named by the [MSDN timestamps](https://msdn.microsoft.com/en-us/library/system.datetime.ticks(v=vs.110).aspx), i.e. the time at which each continuous recording began. These time-stamps measure the number of 100 nanosecond intervals that have elapsed since 12:00:00 midnight on Jan 1, 0001. This naming convention is helpful to place all recorded events in the dataset on a common time-base. If your recording files/folders are named following a different convention, you will have to rename them in the form of 64 bit timestamps running at a clock rate of 10<sup>7</sup> Hz.
 
 ## Installation
 
@@ -89,3 +84,9 @@ Right-click			| Add chain (or cluster) to *Analysis* list box.
 *l*					| Show plots of raw spike waveform amplitudes v/s time for chain.
 *a*					| Toggles highlighted chain for comparison. Move curson over another chain to compare their spike waveforms and ISI histograms.
 *x*					| Plot cross-correlogram between highlighted chain and comparison chain.
+
+## Limitations
+
+- At present, the GUI is designed to work with 4-channel tetrode data. ChGroups with fewer channels can also be sorted but their waveforms will be padded with zeros up to 4 channels. In the future we will add support for channel groups with > 4 channels.
+
+- This program also assumes that the individual recording files of your dataset are named by the [MSDN timestamps](https://msdn.microsoft.com/en-us/library/system.datetime.ticks(v=vs.110).aspx), i.e. the time at which each continuous recording began. These time-stamps measure the number of 100 nanosecond intervals that have elapsed since 12:00:00 midnight on Jan 1, 0001. This naming convention is helpful to place all recorded events in the dataset on a common time-base. If your recording files/folders are named following a different convention, you will have to rename them in the form of 64 bit timestamps running at a clock rate of 10<sup>7</sup> Hz.
