@@ -56,7 +56,7 @@ Shortcut  			|  Function
 :---: 				| :---
 Arrow keys 			| Translate plot.
 Mouse wheel 		| Zoom plot.
-*=* or '-' 			| X-axis zoom.
+*=* or *-* 			| X-axis zoom.
 Keypad *+* or *-* 	| Y-axis zoom.
 *t*					| Changes X-axis ticklabels to show absolute time (date and hour) instead of hours from the beginning of the recording.
 
