@@ -2773,55 +2773,7 @@ guidata(hObject, handles);  minimap = figure(24); guidata(minimap, handles);  ax
 
 % --------------------------------------------------------------------
 function select_zone_screener_Callback(hObject, eventdata, handles)
-% Selection by hand of a region in the screener. The numbers of the
-% selected chains are displayed in a listbox.
-addpath([pwd '/plotFunctions/']);
-addpath([pwd '/selectTools/']);
-
-% Coordinates of the selection.
-axes(handles.axes2);
-[x, y] = DrawConvexHull;
-selectTimeMin = min(x);
-selectTimeMax = max(x);
-selectAmpsMin = min(y);
-selectAmpsMax = max(y);
-
-% Determination of the channel.
-channel = handles.channel_screener;
-
-% Croping of the data. The data could come from a manual selection in the
-% minimap, a plotted cluster or from the plot of a cluster in construction.
-if handles.fromMap == 1
-    [chainsMatTotSelectedAxes2] = chainsSelection(handles.chainsMatTotSelectedAxes1, selectTimeMin, selectTimeMax, selectAmpsMin, selectAmpsMax, handles.channel_screener, 'fromMap');
-end
-
-if handles.fromClust == 1
-    value_selected = get(handles.listbox1, 'Value');
-    chainsMatTot = handles.chainsMatTot;
-    clusterVecAll = handles.clusterVecAll;
-    cluster = [];
-    for chain = 1 : length(clusterVecAll{1, value_selected})
-        for chainL2 = 1 : length(chainsMatTot)
-            if clusterVecAll{1, value_selected}(chain) == chainsMatTot(chainL2).num
-                cluster = [cluster; chainsMatTot(chainL2)];
-            end
-        end
-    end
-    chainsMatTotSelectedAxes1 = cluster;
-    [chainsMatTotSelectedAxes2] = chainsSelection(chainsMatTotSelectedAxes1, selectTimeMin, selectTimeMax, selectAmpsMin, selectAmpsMax, handles.channel_screener, 'fromClust');
-end
-
-chainsNum = [chainsMatTotSelectedAxes2.num];
-
-set(handles.listbox5, 'value', 1);
-set(handles.listbox5, 'string', chainsNum);
-
-axes(handles.axes3);
-cla(handles.axes3);
-plotSpikeWaveforms(chainsMatTotSelectedAxes2);
-
-% Saving the variables.
-handles.chainsMatTotSelectedAxes2 = chainsMatTotSelectedAxes2;
+% empty
 guidata(hObject, handles);  minimap = figure(24); guidata(minimap, handles);  axes(handles.axes4);
 
 
