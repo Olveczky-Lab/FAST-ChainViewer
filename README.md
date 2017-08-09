@@ -7,7 +7,7 @@ Using a combination of automatic and manual procedures, you can interactively *m
 
 ## Installation
 
-- You will need a computer running at least Matlab 2015b (we haven't tested earlier versions). Copy the entire code folder to your computer and add it to your Matlab path. Folder includes some File Exchange functions such as [xml2struct.m](https://www.mathworks.com/matlabcentral/fileexchange/28518-xml2struct) and [rgb2hex](https://www.mathworks.com/matlabcentral/fileexchange/46289-rgb2hex-and-hex2rgb).
+- You will need a computer running at least Matlab 2015b (we haven't tested earlier versions). Copy the entire code folder to your computer and add it to your Matlab path. The folder includes some File Exchange functions such as [xml2struct.m](https://www.mathworks.com/matlabcentral/fileexchange/28518-xml2struct) and [rgb2hex](https://www.mathworks.com/matlabcentral/fileexchange/46289-rgb2hex-and-hex2rgb).
 
 - Depending on the size of your datasets, you may require a decent amount of memory and a desktop graphics card. For working with a tetrode dataset spanning ~3 months, we require at least 32 GB RAM. An SSD is also helpful for speeding up loading/saving variables from disk.
 
