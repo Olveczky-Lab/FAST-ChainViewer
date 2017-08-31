@@ -92,4 +92,4 @@ Right-click			| Add chain (or cluster) to *Analysis* list box.
 
 - This program also assumes that the individual recording files of your dataset are named by the [MSDN timestamps](https://msdn.microsoft.com/en-us/library/system.datetime.ticks(v=vs.110).aspx), i.e. the time at which each continuous recording began. These time-stamps measure the number of 100 nanosecond intervals that have elapsed since 12:00:00 midnight on Jan 1, 0001. This naming convention is helpful to place all recorded events in the dataset on a common time-base. If your recording files/folders are named following a different convention, you will have to rename them in the form of 64 bit timestamps running at a clock rate of 10<sup>7</sup> Hz.
 
-- You may need to change '\' to '/' for paths on UNIX based filesystems. 
+- You may need to change '\\' to '/' for paths on UNIX based filesystems. 
